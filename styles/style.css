@@ -1,0 +1,104 @@
+*,html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+nav {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+  /* border-bottom: #686868 1px solid; */
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.11); 
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.11);
+  padding: 24px 20px;
+}
+
+nav img {
+  border-radius: 90px;
+  height: 50px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48); 
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48);  
+} 
+
+nav ul {
+  margin: auto;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  /* justify-content: center; */
+  
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: #686868;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* Section Hero */
+.hero {
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 50px; */
+}
+
+/* Hero - Left */
+.main-text {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  margin-left: 24px;
+  margin-top: 20px;
+  gap: 3rem;
+  /* text-align: center; */
+}
+
+.hero-left img {
+  width: 400px;
+  aspect-ratio: 1/1;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0px 0px 50px 0px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48); 
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48);
+}
+
+.text-content{
+  /* text-align: center; */
+  margin-bottom: 20px;
+  gap: 200px;
+}
+
+.text-content h4{
+  font-size: 10px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.text-content h2{
+  font-size: 20px;
+  color: #133562;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-family: 'PT Serif', serif;
+  text-align: left;
+}
+
+.text-content h3{
+  font-size: 14px;
+  color: #6c7a89;
+  font-weight: 400;
+  text-align: left;
+}
