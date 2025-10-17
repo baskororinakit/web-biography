@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li a {
   font-family: 'Poppins', sans-serif;
-  color: #686868;
+  color: #2c2859;
   font-size: 15px;
   text-decoration: none;
 }
@@ -56,16 +56,16 @@ nav ul li a {
   display: flex;
   /* justify-content: center; */
   align-items: flex-start;
-  margin-left: 24px;
+  margin-left: 40px;
   margin-top: 20px;
   gap: 3rem;
   /* text-align: center; */
 }
 
 .hero-left img {
-  width: 400px;
+  width: 500px;
   aspect-ratio: 1/1;
-  height: 400px;
+  /* height: 400px; */
   object-fit: cover;
   border-radius: 0px 0px 50px 0px;
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48); 
@@ -101,4 +101,78 @@ nav ul li a {
   color: #6c7a89;
   font-weight: 400;
   text-align: left;
+}
+
+/* Hero - Right */
+.hero-right {
+  padding: 24px;
+  margin-left: 2rem;
+  width: auto;
+  /* background-color: #133562; */
+}
+
+.hero-right h2 {
+  color: #181818;
+  font-size: 42px;
+  font-weight: 700;
+  padding: 20px;
+  font-family: 'PT Serif', serif;
+  overflow: hidden;
+  border-right: 1px solid rgb(41, 28, 99);
+  white-space: nowrap;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 3;
+  animation-fill-mode: forwards;
+}
+
+.hero-right p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.hero-right h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #181818;
+  padding: 20px;
+  font-weight: 700;
+  font-family: 'PT Serif', serif;
+}
+
+.born {
+  margin-top: -15px;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 400px;
+  color: #555;
+}
+
+.biography-born {
+  display: flex;
+}
+.biography-born img {
+  height: 150px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin-right: 20px;
+}
+/* The typing effect */
+@keyframes typing {
+  from { 
+    width: 0;
+    border-right-color: rgb(41, 28, 99);
+  }
+  to { 
+    width: 100%;
+    border-right-color: transparent;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-right-color: transparent }
+  50% { border-right-color: rgb(41, 28, 99); }
 }
