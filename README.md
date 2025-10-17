@@ -1,3 +1,3 @@
 # Biography Web About Abu bakar ash-shidiq
-still in progress
-<h3>Preview:</h3>
+Still in progress
+<h3>Preview:https://baskororinakit.github.io/web-biography/</h3>
