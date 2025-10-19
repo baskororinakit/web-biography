@@ -1,178 +1,122 @@
+:root {
+  --background-color: #ffffff;
+  --background-color2: #f0f4ff;
+  --primary-color: #2e5696;
+}
+
 *,html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.7;
 }
 
-nav {
+/* Homepage (Abu bakar) */
+header {
+  height: 100vh;
+  background: linear-gradient(to right, #1a1a1a, #444);
   display: flex;
-  background-color: #f4f4f4;
-  justify-content: space-between;
-  /* border-bottom: #686868 1px solid; */
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.11); 
-  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.11);
-  padding: 24px 20px;
-}
-
-nav img {
-  border-radius: 90px;
-  height: 50px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48); 
-  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48);  
-} 
-
-nav ul {
-  margin: auto;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  /* justify-content: center; */
-  
-}
-
-nav ul li a {
-  font-family: 'Poppins', sans-serif;
-  color: #2c2859;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-/* Section Hero */
-.hero {
-  display: flex;
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
-  padding: 50px 20px;
-  gap: 50px; */
-}
-
-/* Hero - Left */
-.main-text {
-  display: flex;
-  /* justify-content: center; */
-  align-items: flex-start;
-  margin-left: 40px;
-  margin-top: 20px;
-  gap: 3rem;
+  flex-direction: column;
+  color: white;
   /* text-align: center; */
 }
 
-.hero-left img {
-  width: 500px;
-  aspect-ratio: 1/1;
-  /* height: 400px; */
-  object-fit: cover;
-  border-radius: 0px 0px 50px 0px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48); 
-  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.48);
-}
-
-.text-content{
-  /* text-align: center; */
-  margin-bottom: 20px;
-  gap: 200px;
-}
-
-.text-content h4{
-  font-size: 10px;
+header .typing-text {
+  font-size: 2.8rem;
   font-weight: 600;
-  color: #555;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.text-content h2{
-  font-size: 20px;
-  color: #133562;
-  margin-bottom: 6px;
-  font-weight: 700;
-  font-family: 'PT Serif', serif;
-  text-align: left;
-}
-
-.text-content h3{
-  font-size: 14px;
-  color: #6c7a89;
-  font-weight: 400;
-  text-align: left;
-}
-
-/* Hero - Right */
-.hero-right {
-  padding: 24px;
-  margin-left: 2rem;
-  width: auto;
-  /* background-color: #133562; */
-}
-
-.hero-right h2 {
-  color: #181818;
-  font-size: 42px;
-  font-weight: 700;
-  padding: 20px;
-  font-family: 'PT Serif', serif;
-  overflow: hidden;
-  border-right: 1px solid rgb(41, 28, 99);
+  border-right: 3px solid white;
   white-space: nowrap;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end 3;
-  animation-fill-mode: forwards;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(22, end) forwards, blink 0.8s infinite;
 }
 
-.hero-right p {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-.hero-right h3 {
-  margin-top: 30px;
-  font-size: 20px;
-  color: #181818;
-  padding: 20px;
-  font-weight: 700;
-  font-family: 'PT Serif', serif;
-}
-
-.born {
-  margin-top: -15px;
-  font-size: 12px;
-  line-height: 1.6;
-  max-width: 400px;
-  color: #555;
-}
-
-.biography-born {
-  display: flex;
-}
-.biography-born img {
-  height: 150px;
-  object-fit: cover;
-  /* border-radius: 50%; */
-  margin-right: 20px;
-}
-/* The typing effect */
+/* Animasi Ketik */
 @keyframes typing {
-  from { 
+  from {
     width: 0;
-    border-right-color: rgb(41, 28, 99);
   }
-  to { 
-    width: 100%;
-    border-right-color: transparent;
+  to {
+    width: 16.5ch;
   }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-right-color: transparent }
-  50% { border-right-color: rgb(41, 28, 99); }
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.btn-biografi {
+  /* display: flex; */
+  justify-content: start;
+  /* margin-top: 90px; */
+  padding: 10px 20px;
+  background-color: #f4f4f43c;
+  color: white;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  border-radius: 13px;
+  transition: all ease-in-out .3s;
+}
+
+.btn-biografi:hover {
+  background-color: #f4f4f422;
+}
+
+section { /* all section */
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after { /* underline h2 */
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #2c6ed5;
+  bottom: -10px;
+  left: 0;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.biografi,
+.warisan {
+  background-color: var(--background-color);
+}
+
+.kepemimpinan {
+  background-color: var(--background-color2);
 }

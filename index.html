@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Biografi Abu Bakar As-Shidiq</title>
     <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Fonts -->
@@ -16,65 +16,62 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
+
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Achievment</a></li>
-          <li><a href="#">Galery</a></li>
-        </ul>
-        <!-- <img src="images/profile.jpg" alt="profile" /> -->
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-left">
-        <img data-aos="fade-right" src="images/image.png" alt="images" />
-        <div class="main-text">
-          <div class="text-content">
-            <h4>Lahir</h4>
-            <h2>27 Oktober 573M</h2>
-            <h3>Makkah, Jazirah Arab</h3>
-          </div>
-          <div class="text-content">
-            <h4>Wafat</h4>
-            <h2>23 Agustus 634M</h2>
-            <h3>Madinah, Jazirah Arab</h3>
-          </div>
-        </div>
+      <div class="container">
+        <h1 class="typing-text">Abu Bakar As-Shidiq</h1>
+        <p data-aos="fade-up" data-aos-delay="400">
+          Khalifah Pertama dalam Islam dan Sahabat Terdekat Rasulullah ﷺ
+        </p>
+        <a data-aos="fade-left" data-aos-delay="700" class="btn-biografi" href="#biografi">Lihat Biografi</a>
       </div>
-      <div class="hero-right">
-        <h2 data-aos="fade-up">Abu Bakar ash-Shiddiq</h2>
-        <p data-aos="fade-up">
+    </header>
+    <section id="biografi" class="biografi" id="biografi">
+      <div class="container" data-aos="fade-up">
+        <h2>Biografi Singkat</h2>
+        <p>
           Abdullah bin Abu Quhafah عبد الله بن أبي قحافة عثمان بن atau yang
-          lebih dikenal dengan <i>Abu Bakar / Abu Bakr Ash-Shiddiq</i> (أبو بكر
-          الصديق), adalah salah satu pemeluk Islam awal, salah satu sahabat
-          utama <b>Nabi Muhammad</b>, dan khalifah pertama yang dibai'at setelah
+          lebih dikenal dengan Abu Bakar / Abu Bakr Ash-Shiddiq (أبو بكر
+          الصديق), adalah salah satu pemeluk Islam awal, juga salah satu sahabat
+          utama Nabi Muhammad, dan khalifah pertama yang dibai'at setelah
           kematian Nabi Islam Nabi Muhammad. Abu Bakar merupakan putra dari
           keluarga bangsawan terhormat yang ada di makkah. Sebelum masuk islam,
-          Beliau bernama <b>Abdul Ka’bah</b>. Ayahnya yang bernama
-          <b>Utsman bin Amir</b>
+          Beliau bernama Abdul Ka’bah. Ayahnya yang bernama Utsman bin Amir
           masuk islam tepat pada peristiwa Penaklukan Kota Mekkah (Fathu
           Makkah).
         </p>
-        <h3>Biography</h3>
-        <div class="biography-born">
-          <p class="born">
-            Abu Bakar Ash-Shiddiq lahir di Mekkah, pada tahun 573 Masehi, yaitu
-            sekitar dua tahun setelah tahun Gajah (tahun kelahiran Nabi Muhammad
-            SAW). Ia berasal dari kabilah Quraisy, salah satu suku terpandang di
-            Mekkah.
-          </p>
-          <img src="images/mecca.png" alt="">
-        </div>
       </div>
     </section>
+    <section class="kepemimpinan" id="kepemimpinan">
+      <div class="container" data-aos="fade-right">
+        <h2>Kepemimpinan</h2>
+        <p>
+          Setelah wafatnya Rasulullah ﷺ, Abu Bakar dipilih sebagai khalifah
+          pertama umat Islam. Dalam masa kepemimpinannya, beliau berhasil
+          menyatukan umat Islam, menumpas pemberontakan, dan memulai kodifikasi
+          Al-Qur'an. Kepemimpinan Abu Bakar dikenal dengan keadilan, ketegasan,
+          serta ketakwaannya kepada Allah.
+        </p>
+      </div>
+    </section>
+    <section class="warisan" id="warisan">
+      <div class="container" data-aos="fade-left">
+        <h2>Warisan dan Teladan</h2>
+        <p>
+          Abu Bakar wafat pada tahun 634 M dan dimakamkan di samping Rasulullah
+          ﷺ di Madinah. Warisan terbesar beliau adalah keteladanan dalam iman,
+          kejujuran, dan kepemimpinan yang amanah. Hingga kini, sosok Abu Bakar
+          As-Shidiq menjadi inspirasi bagi umat Islam di seluruh dunia.
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 700,
-      once: true,
-    });
-  </script>
 </html>
