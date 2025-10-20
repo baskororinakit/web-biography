@@ -40,7 +40,6 @@ header .typing-text {
   animation: typing 3s steps(22, end) forwards, blink 0.8s infinite;
 }
 
-/* Animasi Ketik */
 @keyframes typing {
   from {
     width: 0;
